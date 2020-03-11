@@ -10,7 +10,8 @@ from seqeval.metrics import f1_score, precision_score, recall_score
 from torch.nn import CrossEntropyLoss
 from torch.utils.data import DataLoader, RandomSampler, SequentialSampler, TensorDataset
 from torch.utils.data.distributed import DistributedSampler
-from tqdm.autonotebook import tqdm, trange
+from tqdm import tqdm_notebook as tqdm 
+from tqdm import trange
 
 from transformers import (
     WEIGHTS_NAME,
